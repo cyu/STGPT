@@ -35,7 +35,8 @@ st.sidebar.markdown("Assistant GPT")
 st.sidebar.divider()
 
 # File uploader for CSV, XLS, XLSX
-uploaded_file = st.file_uploader("Upload your file", type=["csv", "xls", "xlsx"])
+uploaded_file = None
+# uploaded_file = st.file_uploader("Upload your file", type=["csv", "xls", "xlsx"])
 
 if uploaded_file is not None:
     # Determine the file type
